@@ -76,7 +76,7 @@ const app = async (yargsObj) => {
         // ------------------------------------------------ TV SHOWS --------------------------------------------------
         // ------------------------------------------------------------------------------------------------------------
 
-        
+
         else if(yargsObj.add && yargsObj.tvshows) {
             await createtvShow({
                 title: yargsObj.title, 
@@ -120,7 +120,7 @@ const app = async (yargsObj) => {
                 actor: yargsObj.newActor,
                 })
             log("Updated Specified tvshows")
-            log(await listMovies())
+            log(await listtvShows())
         }
         // Lists all tvshows cotain actor requires you to do --findActor
         // If actor is in multiple tvshows it will show all tvshows containing --findActor
