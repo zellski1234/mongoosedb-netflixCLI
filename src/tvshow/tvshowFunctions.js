@@ -16,7 +16,7 @@ exports.listtvShows = async () => {
     try {
         return await TVShow.find({})
     } catch (error) {
-        console.log("error in listtvShow function")
+        console.log("error in listtvShows function")
         console.log(error)
     }
 }
